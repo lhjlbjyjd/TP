@@ -1,4 +1,6 @@
-public class Unit {
+package Units;
+
+public class Unit implements UnitInterface {
     private float health, maxHealth, armor, damage;
 
     Unit(float health, float maxHealth, float armor, float damage){
@@ -21,6 +23,10 @@ public class Unit {
         if(health <= 0){
             die();
         }
+    }
+
+    public void moveTo(int x, int y, int z){
+        //Somehow move
     }
 
     public void die(){

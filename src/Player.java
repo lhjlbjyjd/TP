@@ -1,24 +1,27 @@
+import Units.*;
+import Nations.Nation;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class Player {
 
-    Factory meleeFactory;
-    Factory archerFactory;
-    Factory cavalryFactory;
+    Nation nation;
+    List<Unit> units = new ArrayList<Unit>();
 
-    Player(Factory m, Factory a, Factory c){
-        meleeFactory = m;
-        archerFactory = a;
-        cavalryFactory = c;
+    Player(Nation nation){
+        this.nation = nation;
     }
 
-    Unit createMelee(){
-        return meleeFactory.createUnit();
+    void createMelee(){
+        units.add(nation.meleeFactory.createUnit());
     }
 
-    Unit createArcher(){
-        return archerFactory.createUnit();
+    void createArcher(){
+        units.add(nation.archerFactory.createUnit());
     }
 
-    Unit createCavalry(){
-        return cavalryFactory.createUnit();
+    void createCavalry(){
+        units.add(nation.cavalryFactory.createUnit());
     }
 }

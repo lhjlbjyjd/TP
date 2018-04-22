@@ -1,10 +1,9 @@
 public class Main {
 
-    public static void main(String[] args) {
-        System.out.println("Hello World!");
-
-        Factory f = new SwedishArcherFactory();
+    public void start() {
     }
 
-
+    public static void main(String[] args) {
+        new Main().start();
+    }
 }
