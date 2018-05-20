@@ -1,5 +1,8 @@
-import Units.*;
+package Main;
+
 import Nations.Nation;
+import Units.Unit;
+import Units.UnitInterface;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,7 +10,7 @@ import java.util.List;
 public class Player {
 
     Nation nation;
-    List<Unit> units = new ArrayList<Unit>();
+    public List<UnitInterface> units = new ArrayList<>();
 
     Player(Nation nation){
         this.nation = nation;

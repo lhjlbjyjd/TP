@@ -1,6 +1,5 @@
-package modifiers;
+package Modifiers;
 
-import Units.Unit;
 import Units.UnitInterface;
 
 public abstract class BaseModifier {

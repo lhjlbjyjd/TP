@@ -5,7 +5,7 @@ import Factories.SwedishCavalryFactory;
 import Factories.SwedishMeleeFactory;
 
 public class Sweden extends Nation {
-    Sweden(){
+    public Sweden(){
         this.meleeFactory = new SwedishMeleeFactory();
         this.archerFactory = new SwedishArcherFactory();
         this.cavalryFactory = new SwedishCavalryFactory();
